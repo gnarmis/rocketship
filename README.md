@@ -18,6 +18,8 @@ So here it is.
 
 - modify app function in config/boot.rb to map your apps to the routes
 
+- `rackup config.ru` to start it
+
 ## Thanks
 
 I looked at so many different examples from other people to hack this together.

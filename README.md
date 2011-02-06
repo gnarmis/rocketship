@@ -18,5 +18,7 @@ So here it is.
 
 - modify app function in config/boot.rb to map your apps to the routes
 
-## Why
+## Thanks
 
+I looked at so many different examples from other people to hack this together.
+Thanks to everyone out there, especially the [Padrino](http://www.padrinorb.com) team, whose sources were very helpful when I built this.

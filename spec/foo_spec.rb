@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Foo do
+describe Foobar::Foo do
   describe "GET '/'" do
     it "should be successful" do
       get '/'

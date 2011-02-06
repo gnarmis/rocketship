@@ -15,3 +15,8 @@ So here it is.
 - run `rspec spec/` (just for fun)
 
 - start building your project
+
+- modify app function in config/boot.rb to map your apps to the routes
+
+## Why
+

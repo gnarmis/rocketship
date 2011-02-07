@@ -16,7 +16,7 @@ So here it is.
 
 - start building your project
 
-- modify app function in config/boot.rb to map your apps to the routes
+- modify your app routes in `config.ru`
 
 - `rackup config.ru` to start it
 

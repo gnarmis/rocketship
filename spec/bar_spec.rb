@@ -1,9 +1,14 @@
 require 'spec_helper'
 
 describe Foobar::Bar do
-  describe "GET '/bar'" do
+  
+  def app
+    Foobar::Bar.app
+  end
+  
+  describe "GET '/'" do
     it "should be successful" do
-      get '/bar'
+      get '/'
       last_response.should be_ok
     end
   end

@@ -1,3 +1,6 @@
 require File.dirname(__FILE__) + '/config/boot.rb'
 
-run app
+run Rack::URLMap.new({
+            "/"    => Foobar::Foo.new,
+            "/bar" => Foobar::Bar.new
+})

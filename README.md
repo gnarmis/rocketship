@@ -12,7 +12,7 @@ So here it is.
 
 - run `bundle install` (add other gems you may need to the Gemfile beforehand)
 
-- run `rspec spec/` (just for fun)
+- run `rake spec` (just for fun)
 
 - start building your project
 

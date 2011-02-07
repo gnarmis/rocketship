@@ -6,6 +6,8 @@
 
 - added Webrat support
 
+- added autotest support
+
 ## Overview
 
 I needed a template where all the cool "new" stuff is used, like RSpec2, Bundler and additonal support for multiple applications as well as Ruby 1.9.2 compatibility.

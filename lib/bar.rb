@@ -12,8 +12,8 @@ module Foobar
     
     # I did this to be able to wrap my app in Rack::Auth::Digest for example
     ## Example:
-    ## def self.app
-    ##  app = Rack::Auth::Digest::MD5.new(Historiously::Api.new) do |username|
+    ## def self.new(*)
+    ##  app = Rack::Auth::Digest::MD5.new(super) do |username|
     ##    {'foo' => 'bar'}[username]
     ##  end
     ##  app.realm = 'Foobar::Bar'
@@ -21,8 +21,8 @@ module Foobar
     ##  app
     ## end 
     
-    def self.app
-      Foobar::Bar.new
+    def self.new(*)
+      super
     end
     
   end

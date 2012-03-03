@@ -9,6 +9,13 @@ task :spec do
   end
 end
 
+desc "Run all specs with code coverage"
+task :coverage do
+  sh "rm -rf coverage/*"
+  ENV['COVERAGE'] = "true"
+  sh "rspec -r spec_helper"
+end
+
 desc "Run IRB console with app environment"
 task :console do
   puts "Loading development console..."
@@ -19,5 +26,6 @@ desc "Show help menu"
 task :help do
   puts "Available rake tasks: "
   puts "rake console - Run a IRB console with all enviroment loaded"
-  puts "rake spec - Run specs and calculate coverage"
+  puts "rake spec - Run specs"
+  puts "rake coverage - Run specs and calculate coverage"
 end

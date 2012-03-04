@@ -22,10 +22,17 @@ task :console do
   system("irb -r ./config/boot.rb")
 end
 
+desc "Run Pry console with app environment"
+task :pry do
+  puts "Loading Pry development console..."
+  system("pry -r ./config/boot.rb")
+end
+
 desc "Show help menu"
 task :help do
   puts "Available rake tasks: "
-  puts "rake console - Run a IRB console with all enviroment loaded"
+  puts "rake console - Run a IRB console with the enviroment loaded"
+  puts "rake pry - Run a Pry console with the enviroment loaded"
   puts "rake spec - Run specs"
   puts "rake coverage - Run specs and calculate coverage"
 end

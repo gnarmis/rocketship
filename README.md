@@ -12,7 +12,9 @@
 
 I needed a template where all the cool "new" stuff is used, like RSpec2, Bundler and additonal support for multiple applications as well as Ruby 1.9.2 compatibility.
 
-So here it is.
+Coverage report generation and a development console are both great to have, so I wanted to integrate SimpleCov, IRB, and Pry.
+
+So, here it is.
 
 ## Usage
 
@@ -20,15 +22,21 @@ So here it is.
 
 - run `bundle install` (add other gems you may need to the Gemfile beforehand)
 
-- run `rake` or `rake help` to see available tasks
-
-- run `rake spec` (just for fun)
-
 - start building your project
 
 - modify your app routes in `config.ru`
 
-- `rackup config.ru` to start it
+- `rackup` to run your app
+
+## Development
+
+- run `rake` or `rake help` to see available tasks
+
+- run `rake console` for IRB console and `rake pry` for Pry console
+
+- run `rake spec` for testing
+
+- run `rake coverage` to generate coverage reports
 
 ## Thanks
 

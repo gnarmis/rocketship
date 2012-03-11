@@ -1,10 +1,11 @@
-# sinatra-rspec-bundler-template
+# minimal-template
 
 ## Update
 
 - cleaned up lib/. Now, each modular app has its own folder, so you can spin out separate files to hold your views, models, etc, as your app grows.
 
-- added logging example to foo and bar
+- added an example grape app
+
 
 ## Overview
 

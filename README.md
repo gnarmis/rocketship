@@ -2,11 +2,9 @@
 
 ## Update
 
-- added Rake support
+- cleaned up lib/. Now, each modular app has its own folder, so you can spin out separate files to hold your views, models, etc, as your app grows.
 
-- added Webrat support
-
-- added autotest support
+- added logging example to foo and bar
 
 ## Overview
 

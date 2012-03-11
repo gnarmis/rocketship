@@ -1,21 +1,12 @@
-# Repository Moved. No longer maintained.
-
-## Check out [Rocketship](https://github.com/gnarmis/rocketship).
-
-## Update
-
-- cleaned up lib/. Now, each modular app has its own folder, so you can spin out separate files to hold your views, models, etc, as your app grows.
-
-- added an example grape app
-
+# Rocketship
 
 ## Overview
 
-I needed a template where all the cool "new" stuff is used, like RSpec2, Bundler and additonal support for multiple applications as well as Ruby 1.9.2 compatibility.
+Ruby has some great micro-frameworks to jumpstart development of web services. But when you want to spin up a number of basic services using things like [Sinatra](https://github.com/sinatra), [Grape](https://github.com/intridea/grape), and [RestClient](https://github.com/adamwiggins/rest-client), along with testing helpers such as [RSpec](https://github.com/rspec/rspec), [Webrat](https://github.com/brynary/webrat), and [SimpleCov](https://github.com/colszowka/simplecov) (not to mention dependency management using [Bundler](https://github.com/bundler/bundler) and a few simple Rake tasks), there's quite a lot of complexity and boiler-plate to deal with.
 
-Coverage report generation and a development console are both great to have, so I wanted to integrate SimpleCov, IRB, and Pry.
+Want to just dive into development without browsing around for a while and setting things up? Use Rocketship. 
 
-So, here it is.
+Currently, Rocketship shows you how to integrate a [Sinatra](https://github.com/sinatra) app and a [Grape](https://github.com/intridea/grape) API app together using Rack, along with basic support for development and testing.
 
 ## Usage
 
@@ -29,6 +20,8 @@ So, here it is.
 
 - `rackup` to run your app
 
+You can add your own Rack-based frameworks in their own folders under `lib/`, putting your classes (which sub-class your favorite framework) under the main module (by default, it's called `Project`). Then, update `config.ru` and you're good to go!
+
 ## Development
 
 - run `rake` or `rake help` to see available tasks
@@ -41,5 +34,4 @@ So, here it is.
 
 ## Thanks
 
-I looked at so many different examples from other people to hack this together.
-Thanks to everyone out there, especially the [Padrino](http://www.padrinorb.com) team, whose sources were very helpful when I built this.
+The original fork of this project came from https://github.com/daddz/sinatra-rspec-bundler-template, who in turn credits the [Padrino](http://www.padrinorb.com/) team greatly.

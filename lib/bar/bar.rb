@@ -1,12 +1,13 @@
-module Foobar
+module Project
   class Bar < Sinatra::Base
-    
-    #configure do
-      # set app specific settings
-      # for example different view folders
-    #end
+    # set configuration for this app
+    configure :production, :development do
+      enable :logging
+      logger = Logger.new(STDOUT)
+    end
     
     get '/' do
+      logger.info "loading index page in bar"
       "Hello from bar"
     end
     

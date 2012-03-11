@@ -1,4 +1,6 @@
-# minimal-template
+# Repository Moved. No longer maintained.
+
+## Check out [Rocketship](https://github.com/gnarmis/rocketship).
 
 ## Update
 

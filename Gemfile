@@ -2,6 +2,7 @@ source :rubygems
 
 gem 'rack'
 gem 'sinatra'
+gem 'grape'
 
 group :development do
 	gem 'pry'

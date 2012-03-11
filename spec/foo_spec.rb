@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Foobar::Foo do
+describe Project::Foo do
   
   def app
-    @app ||= Foobar::Foo
+    @app ||= Project::Foo
   end
 
   describe "GET '/'" do

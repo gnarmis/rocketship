@@ -1,9 +1,11 @@
 source :rubygems
 
+gem 'rack'
 gem 'sinatra'
 
 group :development do
 	gem 'pry'
+	gem 'logger'
 end
 
 group :test do

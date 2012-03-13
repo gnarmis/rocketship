@@ -4,7 +4,9 @@ describe Project::FooAPI do
   
   def app
     @app ||= Project::FooAPI
+    Capybara.app = Project::FooAPI
   end
+
   
   describe "GET '/api/hello'" do
     it "should be successful" do

@@ -5,6 +5,7 @@ task :default => :help
 desc "Run specs"
 task :spec do
   RSpec::Core::RakeTask.new(:spec) do |t|
+    t.rspec_opts = ["-f progress", "-r ./spec/spec_helper.rb"]
     t.pattern = './spec/**/*_spec.rb'
   end
 end
@@ -14,6 +15,13 @@ task :coverage do
   sh "rm -rf coverage/*"
   ENV['COVERAGE'] = "true"
   sh "rspec -r spec_helper"
+end
+
+desc "Produce documentation using YARD"
+task :doc do
+  sh "rm -rf doc/*"
+  ENV['DOC'] = "true"
+  sh "yard doc"
 end
 
 desc "Run IRB console with app environment"
@@ -35,4 +43,5 @@ task :help do
   puts "rake pry - Run a Pry console with the enviroment loaded"
   puts "rake spec - Run specs"
   puts "rake coverage - Run specs and calculate coverage"
+  puts "rake doc - Produce documentation using YARD"
 end

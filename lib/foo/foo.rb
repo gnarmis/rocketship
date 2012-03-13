@@ -10,6 +10,10 @@ module Project
       logger.info "loading index page in foo"
       "Hello from foo"
     end
+
+    get '/button' do
+      erb :button
+    end
     
     # I did this to be able to wrap my app in Rack::Auth::Digest for example
     ## Example:

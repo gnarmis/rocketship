@@ -1,3 +1,5 @@
 *.lock
 *.log
 coverage
+.yardoc
+doc

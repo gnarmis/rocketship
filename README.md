@@ -1,8 +1,13 @@
 # Rocketship
 
+## Updates
+
+- Webrat replaced by Capybara, with example test in `foo_spec.rb`
+- YARD documentation generation Rake task added (`rake doc`).
+
 ## Overview
 
-Ruby has some great micro-frameworks to jumpstart development of web services. But when you want to spin up a number of basic services using things like [Sinatra](https://github.com/sinatra), [Grape](https://github.com/intridea/grape), and [RestClient](https://github.com/adamwiggins/rest-client), along with testing helpers such as [RSpec](https://github.com/rspec/rspec), [Webrat](https://github.com/brynary/webrat), and [SimpleCov](https://github.com/colszowka/simplecov) (not to mention dependency management using [Bundler](https://github.com/bundler/bundler) and a few simple Rake tasks), there's quite a lot of complexity and boiler-plate to deal with.
+Ruby has some great micro-frameworks to jumpstart development of web services. But when you want to spin up a number of basic services using things like [Sinatra](https://github.com/sinatra), [Grape](https://github.com/intridea/grape), and [RestClient](https://github.com/adamwiggins/rest-client), along with testing helpers such as [RSpec](https://github.com/rspec/rspec), [Capybara](https://github.com/jnicklas/capybara), and [SimpleCov](https://github.com/colszowka/simplecov) (not to mention dependency management using [Bundler](https://github.com/bundler/bundler) and a few simple Rake tasks), there's quite a lot of complexity and boiler-plate to deal with.
 
 Want to just dive into development without browsing around for a while and setting things up? Use Rocketship. 
 

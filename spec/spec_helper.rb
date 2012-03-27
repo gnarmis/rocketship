@@ -1,7 +1,7 @@
 ENV['RACK_ENV'] = "test"
 if ENV['COVERAGE']
-	require "SimpleCov"
-	SimpleCov.start
+  require "SimpleCov"
+  SimpleCov.start
 end
 require File.expand_path(File.dirname(__FILE__) + "/../config/boot")
 

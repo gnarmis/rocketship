@@ -1,9 +1,7 @@
 require 'spec_helper'
 
-
-
 describe Project::Foo do
-  
+
   def app
     @app ||= Project::Foo
     Capybara.app = Project::Foo
@@ -17,9 +15,9 @@ describe Project::Foo do
   end
 
   describe "GET '/button", :type => :request do
-  	it "clicks a button" do
-  		visit '/button'
-  		click_link 'button'
-  	end
+    it "clicks a button" do
+      visit '/button'
+      click_link 'button'
+    end
   end
 end

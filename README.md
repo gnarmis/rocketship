@@ -4,6 +4,7 @@
 
 - Webrat replaced by Capybara, with example test in `foo_spec.rb`
 - YARD documentation generation Rake task added (`rake doc`).
+- VERSION constant added to Project (bump version for releases/hotfixes/features)
 
 ## Overview
 

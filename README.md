@@ -1,18 +1,10 @@
 # Rocketship
 
-## Updates
-
-- Webrat replaced by Capybara, with example test in `foo_spec.rb`
-- YARD documentation generation Rake task added (`rake doc`).
-- VERSION constant added to Project (bump version for releases/hotfixes/features)
-
 ## Overview
 
-Ruby has some great micro-frameworks to jumpstart development of web services. But when you want to spin up a number of basic services using things like [Sinatra](https://github.com/sinatra), [Grape](https://github.com/intridea/grape), and [RestClient](https://github.com/adamwiggins/rest-client), along with testing helpers such as [RSpec](https://github.com/rspec/rspec), [Capybara](https://github.com/jnicklas/capybara), and [SimpleCov](https://github.com/colszowka/simplecov) (not to mention dependency management using [Bundler](https://github.com/bundler/bundler) and a few simple Rake tasks), there's quite a lot of complexity and boiler-plate to deal with.
+Ruby has some great micro-frameworks to jumpstart development of web services. But when you want to spin up a number of basic services using things like [Sinatra](https://github.com/sinatra), [RestClient](https://github.com/adamwiggins/rest-client), and testing helpers such as [RSpec](https://github.com/rspec/rspec), [Capybara](https://github.com/jnicklas/capybara), and [SimpleCov](https://github.com/colszowka/simplecov) (not to mention dependency management using [Bundler](https://github.com/bundler/bundler) and a few simple Rake tasks), there's quite a lot of complexity and boiler-plate to deal with.
 
-Want to just dive into development without browsing around for a while and setting things up? Use Rocketship. 
-
-Currently, Rocketship shows you how to integrate a [Sinatra](https://github.com/sinatra) app and a [Grape](https://github.com/intridea/grape) API app together using Rack, along with basic support for development and testing.
+Want to just dive into development without browsing around for a while and setting things up? Working on multiple Sinatra apps and want a sane way to organize everything? Use Rocketship.
 
 ## Usage
 
@@ -24,13 +16,19 @@ Currently, Rocketship shows you how to integrate a [Sinatra](https://github.com/
 
 - modify your app routes in `config.ru`
 
-- `rackup` to run your app
+- add specs in spec/
+
+- `rackup` to run your app; `rake r` to run it with auto-reloading
+
+- bump version number in lib/project.rb
 
 You can add your own Rack-based frameworks in their own folders under `lib/`, putting your classes (which sub-class your favorite framework) under the main module (by default, it's called `Project`). Then, update `config.ru` and you're good to go!
 
 ## Development
 
 - run `rake` or `rake help` to see available tasks
+
+- run `rake r` to start the server with auto-reloading
 
 - run `rake console` for IRB console and `rake pry` for Pry console
 

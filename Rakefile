@@ -2,6 +2,11 @@ require 'rspec/core/rake_task'
 
 task :default => :help
 
+desc "Run with auto-reloading"
+task :r do
+  sh "shotgun config.ru"
+end
+
 desc "Run specs"
 task :spec do
   RSpec::Core::RakeTask.new(:spec) do |t|
@@ -39,6 +44,7 @@ end
 desc "Show help menu"
 task :help do
   puts "Available rake tasks: "
+  puts "rake r - Run with auto-reloading"
   puts "rake console - Run a IRB console with the enviroment loaded"
   puts "rake pry - Run a Pry console with the enviroment loaded"
   puts "rake spec - Run specs"

@@ -22,13 +22,6 @@ task :coverage do
   sh "rspec -r spec_helper"
 end
 
-desc "Produce documentation using YARD"
-task :doc do
-  sh "rm -rf doc/*"
-  ENV['DOC'] = "true"
-  sh "yard doc"
-end
-
 desc "Run IRB console with app environment"
 task :console do
   puts "Loading development console..."
@@ -49,5 +42,4 @@ task :help do
   puts "rake pry - Run a Pry console with the enviroment loaded"
   puts "rake spec - Run specs"
   puts "rake coverage - Run specs and calculate coverage"
-  puts "rake doc - Produce documentation using YARD"
 end

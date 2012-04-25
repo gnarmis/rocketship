@@ -10,6 +10,10 @@ Want to just dive into development without browsing around for a while and setti
 
 - clone this repository
 
+- using RVM, install/use 1.9.2 (`rvm install 1.9.2`, `rvm use 1.9.2`). 1.9.3 doesn't play nice with EventMachine or Thin.
+
+- create an RVM gemset
+
 - run `bundle install` (add other gems you may need to the Gemfile beforehand)
 
 - start building your project

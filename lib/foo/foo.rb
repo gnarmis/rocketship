@@ -1,5 +1,9 @@
+require 'faraday'
+
 module Project
   class Foo < Sinatra::Base
+    register Sinatra::Synchrony
+    Faraday.default_adapter = :em_synchrony
     # set configuration for this app
     configure :production, :development do
       enable :logging

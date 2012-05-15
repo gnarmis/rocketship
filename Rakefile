@@ -32,7 +32,7 @@ end
 desc "Run Pry console with app environment"
 task :pry do
   puts "Loading Pry development console..."
-  system("pry -r ./config/boot.rb")
+  system("bundle exec pry -r ./config/boot.rb")
 end
 
 desc "Show help menu"

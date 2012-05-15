@@ -1,15 +1,17 @@
 source :rubygems
 
-gem 'rack'
-gem 'rack'
-gem 'sinatra'
-gem 'data_mapper', '1.2.0'
-#gem 'dm-sqlite-adaptor', '1.2.0'
+gem 'sinatra', :require => 'sinatra/base'
+gem 'sinatra-contrib', :require => 'sinatra/contrib'
+gem 'sinatra-synchrony', :require => "sinatra/synchrony"
+gem 'thin'
+gem 'faraday'
 
 group :development do
   gem 'pry'
   gem 'logger'
   gem 'shotgun'
+  gem 'foreman'
+  gem 'pry'
 end
 
 group :test do
@@ -17,6 +19,4 @@ group :test do
   gem 'rack-test', :require => "rack/test"
   gem 'capybara', :require => "capybara/rspec"
   gem 'simplecov', :require => false
-  gem 'redcarpet'
-  gem 'yard'
 end

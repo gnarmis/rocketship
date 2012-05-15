@@ -1,5 +1,4 @@
 *.lock
 *.log
 coverage
-.yardoc
-doc
+vendor/ruby

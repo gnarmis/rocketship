@@ -40,6 +40,10 @@ You can add your own Rack-based frameworks in their own folders under `lib/`, pu
 
 - There's simple logging and an example of a Capybara test you can look at in this template.
 
+- protip: remove deleted files from Git (commit the deletions) by doing: `git ls-files --deleted | xargs git rm`
+
+- protip: remember to run gem binaries (like Pry or Foreman) with `bundle exec` so that Bundler knows to take the path to your local gems in vendor/ruby
+
 ## Thanks
 
 The original fork of this project came from https://github.com/daddz/sinatra-rspec-bundler-template, who in turn credits the [Padrino](http://www.padrinorb.com/) team greatly.

@@ -11,7 +11,7 @@ group :development do
   gem 'logger'
   gem 'shotgun'
   gem 'foreman'
-  gem 'pry'
+  gem 'pry', :require => "pry"
 end
 
 group :test do

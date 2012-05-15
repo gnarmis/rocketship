@@ -8,33 +8,35 @@ Want to just dive into development without browsing around for a while and setti
 
 ## Usage
 
-- clone this repository
+- Install RVM and ruby-1.9.3
 
-- run `bundle install` (add other gems you may need to the Gemfile beforehand)
+- Clone this repository
 
-- start building your project
+- Run `bundle install --path vendor/ruby`. Later, add gems you need to Gemfile, run `bundle install`, and Bundler will install and package up your new gems too.
 
-- modify your app routes in `config.ru`
+- Start building your project
 
-- add specs in spec/
+- Modify your app routes in `config.ru`
 
-- `rackup` to run your app; `rake r` to run it with auto-reloading
+- Add background processes and basically any process you need to run to start your app in Procfile.dev.
 
-- bump version number in lib/project.rb
+- Procfile has been provided to allow you to easily deploy this on Heroku's Cedar stack. If you're only using Sinatra, it should be sufficient. Also, Sinatra-synchrony will speed your app up decently :)
+
+- Add specs in spec/
+
+- `rake s` to run your app
+
+- Bump version number in lib/project.rb
 
 You can add your own Rack-based frameworks in their own folders under `lib/`, putting your classes (which sub-class your favorite framework) under the main module (by default, it's called `Project`). Then, update `config.ru` and you're good to go!
 
 ## Development
 
-- run `rake` or `rake help` to see available tasks
+- Run `rake` or `rake help` to see available tasks
 
-- run `rake r` to start the server with auto-reloading
+- Insert `binding.pry` anywhere in your code to invoke the Pry REPL, which you can use for debugging purposes.
 
-- run `rake console` for IRB console and `rake pry` for Pry console
-
-- run `rake spec` for testing
-
-- run `rake coverage` to generate coverage reports
+- There's simple logging and an example of a Capybara test you can look at in this template.
 
 ## Thanks
 

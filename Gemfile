@@ -1,8 +1,9 @@
 source :rubygems
 
-gem 'rack'
-gem 'sinatra'
-gem 'sinatra-synchrony'
+gem 'sinatra', :require => 'sinatra/base'
+gem 'sinatra-contrib', :require => 'sinatra/contrib'
+gem 'sinatra-synchrony', :require => "sinatra/synchrony"
+gem 'thin'
 gem 'faraday'
 
 group :development do
@@ -10,6 +11,8 @@ group :development do
   gem 'pry'
   gem 'logger'
   gem 'shotgun'
+  gem 'foreman'
+  gem 'pry', :require => "pry"
 end
 
 group :test do

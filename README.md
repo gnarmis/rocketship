@@ -1,6 +1,8 @@
 # Rocketship
 
-Now super fast! (using sinatra_synchrony)
+https://img.shields.io/badge/maintained%3F-no!-red.svg?style=flat
+
+Note: I would recommend [Padrino](http://padrinorb.com/) as a middle ground between micro frameworks like Sinatra and full fledged web frameworks like Rails.
 
 ## Overview
 
